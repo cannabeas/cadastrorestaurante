@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 0.875rem;
+    color: whitesmoke;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1.875rem 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 4.375rem;
+    display: block;
+    margin: 0 auto 0.3125rem;
+}
+
+header h1 {
+    margin-bottom: 0.625rem;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.9375rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#menu, #reserva, #cadastro {
+    background-color: #fff;
+    padding: 1.25rem;
+    margin: 1.25rem auto; /* Centralizado */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    max-width: 95%; /* Limite de largura para dispositivos móveis */
+}
+
+#menu h2, #reserva h2, #cadastro h2 {
+    text-align: center;
+    margin-bottom: 0.9375rem;
+}
+
+.prato {
+    text-align: center;
+    margin-bottom: 0.9375rem;
+}
+
+.prato img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.625rem;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+button {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 0.9375rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.reserva-link {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+.reserva-link a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.reserva-link a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 0.625rem;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.625rem 0;
+    }
+
+    section {
+        margin: 0.625rem;
+        padding: 0.9375rem;
+    }
+
+    input, button {
+        font-size: 0.875rem;
+    }
+}
+
+/* Media query para telas menores que 412px */
+@media screen and (max-width: 412px) {
+    form {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    input, select, textarea {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    button {
+        font-size: 0.875rem;
+        padding: 0.6rem;
+    }
+}
+
+/* Media query para telas de altura menor que 915px */
+@media screen and (max-height: 915px) {
+    form {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    input, select, textarea {
+        font-size: 0.875rem;
+        padding: 0.8rem;
+    }
+}
+
+.imagem-centralizada {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.25rem auto;
+}
+
+.centralizada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1.25rem auto;
+    max-width: 412px; /* Largura máxima para centralização */
+    padding: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+/* Reset e estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1.875rem 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 4.375rem;
+    display: block;
+    margin: 0 auto 0.3125rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.9375rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.centralizada {
+    margin: 1rem auto; /* Centralizado */
+    padding: 2rem; /* Ajuste inicial */
+}
+
+/* Media query para telas menores que 412px */
+@media screen and (max-width: 412px) {
+    section.centralizada {
+        padding: 2.5rem; /* Aumentado para mais espaço */
+        margin: 1rem; /* Você pode ajustar isso também */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 0.625rem;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
